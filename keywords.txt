@@ -1,0 +1,8 @@
+SimpleStepper	KEYWORD1
+Interrupt	KEYWORD2
+Timer1	KEYWORD2
+Fast	KEYWORD2
+StepperDriver	KEYWORD2
+1/128	KEYWORD2
+Microsteps	KEYWORD2
+highspeed	KEYWORD2
