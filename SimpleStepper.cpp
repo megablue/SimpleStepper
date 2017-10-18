@@ -2,7 +2,10 @@
     @file SimpleStepper.cpp
     @author Evert Chin
     @brief Fast and Simple Stepper Driver
- */
+
+   * This file may be redistributed under the terms of the MIT license.
+   * A copy of this license has been included with this distribution in the file LICENSE.
+   */
 
 #include "SimpleStepper.h"
 #include "TimerOne.h"
@@ -27,11 +30,8 @@ void SimpleStepper::init(){
     this->pause();
 }
 
-void SimpleStepper::setPulse(long pul){
-    if(this->pulse != pul){
-        this->pulse = pul;
-        Timer1.setPeriod(pul);
-    }
+void SimpleStepper::setPulse(long pulse){
+    Timer1.setPeriod(pulse);
 }
 
 bool SimpleStepper::step(long steps, uint8_t direction){
@@ -45,12 +45,6 @@ bool SimpleStepper::step(long steps, uint8_t direction){
       this->dirPin.setHigh();
     } else {
        this->dirPin.setLow();
-    }
-
-    this->dirPin.getState();
-
-    if(this->dirPin != direction){
-        halt = true;
     }
 
     return true;
