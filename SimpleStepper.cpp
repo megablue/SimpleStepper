@@ -61,10 +61,14 @@ bool SimpleStepper::step(long steps, uint8_t direction, long pulse){
     return  this->step(steps, direction);
 }
 
+long getRemainingSteps(){
+    return ticksRemaining/2;
+}
+
 //returns the remaining steps
 long SimpleStepper::stop(){
     //each step = 2 ticks
-    long stepsRemaining = ticksRemaining/2;
+    long stepsRemaining = this->getRemainingSteps();
 
     Timer1.stop();
 

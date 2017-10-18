@@ -30,6 +30,7 @@ public:
     void setPulse(long pulse);
     bool step(long steps, uint8_t direction);
     bool step(long steps, uint8_t direction, long pulse);
+    long getRemainingSteps();
     long stop();
     void pause();
     void resume();
