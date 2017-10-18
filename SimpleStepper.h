@@ -2,9 +2,6 @@
     @file SimpleStepper.h
     @author Evert Chin
     @brief Fast and Simple Stepper Driver
-    
- * This file may be redistributed under the terms of the MIT license.
- * A copy of this license has been included with this distribution in the file LICENSE.
  */
 #ifndef SIMPLE_STEPPER_BASE_H
 #define SIMPLE_STEPPER_BASE_H
@@ -22,6 +19,7 @@ protected:
     /* for some stupid reason the Pin class requires initialization */ 
     Pin dirPin = Pin(1000);
     Pin stepPin = dirPin;
+    long pulse = 10000;
     bool paused;
     
 public:
