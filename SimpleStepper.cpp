@@ -61,7 +61,7 @@ bool SimpleStepper::step(long steps, uint8_t direction, long pulse){
     return  this->step(steps, direction);
 }
 
-long getRemainingSteps(){
+long SimpleStepper::getRemainingSteps(){
     return ticksRemaining/2;
 }
 
