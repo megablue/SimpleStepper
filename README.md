@@ -1,12 +1,53 @@
 
 # Simple Stepper
 
-*A library for the **Arduino**.*
+*A **Minimal** / **Fast** / **Simple** **Arduino** library.*
 
 <br>
 
-A bare minimum but really fast and simple stepper library. It relies on Timer1 interrupts and direct port manipulations via Pin library to produce extremely smooth stepping signal. It doesn't block as long as you have processing power left. It supports changing the tick rate of the stepper signals to drive the motor faster or slower. It doesn't support acceleration or deceleration control. The usage is very straight forward, basically you just need to provide the STEP and DIR pin numbers, steps, direction and tick rate. The rest of the "API" is pretty much self-explanatory. Base on the author tests on an Arduino Nano 3.0, it is able to drive a 1.8 degree Nema 17 motor with 1/128 microsteps with reasonable speed with still have processing power left for the rest of your code. 
 
+Relies on `Timer1 Interrupts` and `Direct Port Manipulations` via <br>
+the Pin library to produce extremely smooth stepping signal.
+
+
+
+
+
+
+
+<br>
+
+## Features
+
+- Doesn't block as long as you have processing power left.
+- Modifyable tick rate for slower / faster motor speed.
+
+<br>
+<br>
+
+## Unsupported
+
+- Acceleration / Deceleration
+
+<br>
+<br>
+
+## Usage
+
+Simply provide the `STEP` & `DIR` pin numbers, steps, direction <br>
+and tick rate, the rest is pretty much self-explanatory.
+
+<br>
+<br>
+
+## Tested
+
+With an **Arduino Nano 3.0**, it is able to drive a `1.8° Nema 17` <br> 
+motor with `1/128` microsteps with reasonable speed with still <br>
+have processing power left for the rest of your code. 
+
+
+<br>
 <br>
 
 ## Installation
