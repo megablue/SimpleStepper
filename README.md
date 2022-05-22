@@ -1,5 +1,5 @@
 
-# Simple Stepper
+# Simple Stepper    [![Badge License]][License]
 
 *A **Minimal** / **Fast** / **Simple** **Arduino** library.*
 
@@ -89,7 +89,9 @@ have processing power left for the rest of your code.
 <!----------------------------------------------------------------------------->
 
 [Download]: https://github.com/megablue/SimpleStepper/archive/refs/heads/master.zip
+[License]: LICENSE
 
+[Badge License]: https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge
 [Badge Windows]: https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=Windows&logoColor=white
 [Badge Linux]: https://img.shields.io/badge/Linux-10B981?style=for-the-badge&logo=Linux&logoColor=white
 [Badge MacOS]: https://img.shields.io/badge/MacOS-lightgray?style=for-the-badge&logo=MacOS&logoColor=white
