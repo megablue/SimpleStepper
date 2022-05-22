@@ -42,8 +42,8 @@ and tick rate, the rest is pretty much self-explanatory.
 
 ## Tested
 
-With an **Arduino Nano 3.0**, it is able to drive a `1.8° Nema 17` <br> 
-motor with `1/128` microsteps with reasonable speed with still <br>
+With an **[Arduino Nano 3.0]**, it is able to drive a `1.8° Nema 17` <br> 
+motor with `1 / 128` microsteps with reasonable speed with still <br>
 have processing power left for the rest of your code. 
 
 
@@ -56,7 +56,7 @@ have processing power left for the rest of your code.
 
 1. **[Download]** or **Clone** this repository.
 
-    Clone with:
+    #### Clone
   
     ```sh
     git clone https://github.com/megablue/SimpleStepper
@@ -87,6 +87,8 @@ have processing power left for the rest of your code.
 
 
 <!----------------------------------------------------------------------------->
+
+[Arduino Nano 3.0]: https://docs.arduino.cc/hardware/nano
 
 [Download]: https://github.com/megablue/SimpleStepper/archive/refs/heads/master.zip
 [License]: LICENSE
